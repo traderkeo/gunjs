@@ -4,7 +4,7 @@ import 'gun/axe';
 import { writable } from 'svelte/store';
 
 // Database
-export const db = GUN();
+export const db = GUN(['https://gunjs.vercel.app/']);
 
 // Gun User
 export const user = db.user().recall({sessionStorage: true});
